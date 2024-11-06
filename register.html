@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | GoMarinaGo</title>
+    <link rel="stylesheet" href="register-html.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Register</h2>
+      <form action="register.php" method="POST">
+        <input type="text" name="username" placeholder="Username" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <input type="text" name="full_name" placeholder="Full Name" required />
+        <input type="tel" name="phone" placeholder="Phone" />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="country" placeholder="Country" />
+        <input type="text" name="postal_code" placeholder="Postal Code" />
+        <textarea
+          name="current_address"
+          placeholder="Current Address"
+        ></textarea>
+        <button type="submit">Register</button>
+        <p>Already have an account? <a href="login.html">Sign In</a></p>
+      </form>
+    </div>
+  </body>
+</html>

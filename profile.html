@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoMarinaGo</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to your CSS file -->
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo" class="logo-image" />
+        <h1>Go Marina Go</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang_kami.html">Tentang Kami</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="profile.html">Profile User</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="profile-container">
+      <h2>Profile Saya</h2>
+      <form
+        action="save_profile.php"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <div class="form-group">
+          <label for="photo">Foto:</label>
+          <input type="file" id="photo" name="photo" accept="image/*" />
+        </div>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            value="username_anda"
+          />
+        </div>
+        <div class="form-group">
+          <label for="fullname">Nama Lengkap:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            value="Nama Lengkap Anda"
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Telepon:</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            value="Nomor Telepon Anda"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" value="email@anda.com" />
+        </div>
+        <div class="form-group">
+          <label for="country">Negara:</label>
+          <input type="text" id="country" name="country" value="Negara Anda" />
+        </div>
+        <div class="form-group">
+          <label for="city">Kota:</label>
+          <input type="text" id="city" name="city" value="Kota Anda" />
+        </div>
+        <div class="form-group">
+          <label for="postal_code">Kode Pos:</label>
+          <input
+            type="text"
+            id="postal_code"
+            name="postal_code"
+            value="Kode Pos Anda"
+          />
+        </div>
+        <div class="form-group">
+          <label for="address">Alamat Saat Ini:</label>
+          <input type="text" id="address" name="address" value="Alamat Anda" />
+        </div>
+        <div class="button-group">
+          <button type="button" onclick="location.href='beranda.html'">
+            Cancel
+          </button>
+          <button type="submit">Save</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>Maps kebun: [link]</p>
+        <p>Alamat kebun: [alamat]</p>
+        <p>Bantuan: [link]</p>
+        <p>Media Sosial: [links]</p>
+        <p>&copy; 2024 GoMarinaGo. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
